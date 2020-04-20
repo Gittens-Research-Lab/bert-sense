@@ -1,0 +1,14 @@
+{
+  "num_sense": 3,
+  "delta": 5,
+  "min_freq": 10,
+  "subsample": 0.000,
+  "varwindow": false,
+  "num_samples": 10,
+  "emb_dim": 300,
+  "batch_size": 2048,
+  "num_workers": 20,
+  "optimizer": "adam",
+  "learning_rate": 1e-3,
+  "num_epochs": 2 
+}
