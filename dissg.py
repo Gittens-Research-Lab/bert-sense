@@ -216,7 +216,7 @@ def get_optim_fn(optim_name):
     return torch.optim.SGD
   
 if __name__ == "__main__":
-  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch"
+  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch" # Folder for data and output
   vocab_path = os.path.join(SCRATCH, "data/bert-sense/vocab10_small_750k.txt")
   #data_path = os.path.join(SCRATCH, 'data/bert-sense', "small_250k.txt")
   data_path = os.path.join(SCRATCH, 'data/bert-sense', "westwiki-para2")

@@ -104,14 +104,14 @@ def combine_samples(batch):
   return words, berts, ctxs
 
 if __name__ == "__main__":
-  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch"
+  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch" # Folder for data and output
   data_path = os.path.join(SCRATCH, "data/bert-sense/small_750k_bert_ctx_d5.h5")
   exp_dir = os.path.join(SCRATCH, "output/bert-sense", "small-750k-noshuf-bert-d5-s3-adam-lr1e3")
   if not os.path.exists(exp_dir):
     os.makedirs(exp_dir)
 
-  restore_file = os.path.join(exp_dir, 'model-10.tar')
-  #restore_file = None
+  # restore_file = os.path.join(exp_dir, 'model-10.tar')
+  restore_file = None
  
   params = Params('params.json')
   with h5py.File(data_path, 'r', libver='latest', swmr=True) as data_file:

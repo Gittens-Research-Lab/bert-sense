@@ -171,7 +171,7 @@ def combine_samples(batch):
   return words, ctxs, bertctxs
 
 if __name__ == "__main__":
-  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch"
+  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch" # Folder for data and output
   data_path = os.path.join(SCRATCH, "data/bert-sense/small_750k_bert_ctx_d5.h5")
   vocab_path = os.path.join(SCRATCH, "data/bert-sense/vocab10_small_750k.txt")
   exp_dir = os.path.join(SCRATCH, "output/bert-sense", "small-750k-noshuf-dissg-bert-ctx-d5-s3-d300-b2048-ns10-adam-lr1e3-sense-temp4-alpha3")

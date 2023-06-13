@@ -96,12 +96,14 @@ def process_data(file_path, bert_vocab, bert_weight, vocab, delta=5):
 
 
 if __name__ == "__main__":
-  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch/"
+  SCRATCH = "/gpfs/u/home/BERT/BERTnksh/scratch/" # Folder to save data
   data_name = "small_250k"
   data_path = os.path.join(SCRATCH, "data/bert-sense/{}.txt".format(data_name))
   bert_path = os.path.join(SCRATCH, "data/bert-sense/{}_bert_d5.h5".format(data_name)) 
-  bert_vocab = "bert-base-uncased-vocab.txt"
-  bert_weight = "bert_base_weights"
+  bert_vocab = "bert-base-uncased" # Bert model name or path
+  # "bert-base-uncased-vocab.txt"
+  bert_weight = "bert-base-uncased" # Bert model name or path
+  # "bert_base_weights"
 
   # vocab = load_vocab('vocab')
   vocab = create_vocab(data_path, data_name)
